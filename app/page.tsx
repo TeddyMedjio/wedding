@@ -1,4 +1,5 @@
 import { About } from "@/components/About";
+import { Faq } from "@/components/Faq";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { Program } from "@/components/Program";
@@ -12,7 +13,7 @@ export default function Home() {
         <Hero />
         <About />
         <Program />
-        <div className="h-screen bg-red-300"></div>
+        <Faq />
       </main>
     </div>
   );

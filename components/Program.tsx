@@ -3,14 +3,14 @@ import Container from "./Container";
 
 export const Program = () => {
   return (
-    <section className="my-30">
+    <section id="programme" className="my-30">
       <Container>
         <div className="grid place-items-center relative">
-          <p className="text-4xl font-libre-caslon-text mb-20">
+          {/* programme un */}
+          <p className="text-4xl font-libre-caslon-text mb-10">
             Programme de Mariage
           </p>
-          {/* programme un */}
-          <div className="bg-white flex items-center h-[550px] w-full flex-wrap sticky top-1/4">
+          <div className="bg-white flex items-center h-[550px] w-full flex-wrap sticky top-40">
             {/* textes */}
             <div className=" max-w-[500px] p-10 h-full">
               <p className="text-2xl font-libre-caslon-text mb-5">
@@ -60,7 +60,7 @@ export const Program = () => {
             </div>
           </div>
           {/* programme un */}
-          <div className="sticky top-1/4 mt-28 bg-white flex flex-row-reverse items-center h-[550px] w-full flex-wrap">
+          <div className="sticky top-80 mt-60 bg-white flex flex-row-reverse items-center h-[550px] w-full flex-wrap">
             {/* textes */}
             <div className=" max-w-[500px] p-10 h-full">
               <p className="text-2xl font-libre-caslon-text mb-5">

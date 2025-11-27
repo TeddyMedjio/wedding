@@ -4,7 +4,7 @@ import { Carousel } from "./Carousel";
 
 export const About = () => {
   return (
-    <section className="w-full">
+    <section id="about" className="w-full">
       <Container>
         <div className="grid place-items-center text-center">
           <div className="relative size-56">

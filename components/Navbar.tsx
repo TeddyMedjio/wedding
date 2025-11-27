@@ -1,11 +1,35 @@
+"use client";
+
 import Image from "next/image";
 import Container from "./Container";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { useState } from "react";
 
 export const Navbar = () => {
+  const [hidden, setHidden] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous: any = scrollY.getPrevious();
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
+
   return (
-    <nav className="bg-black/5 backdrop-blur-md border-b border-white/50 sticky top-0 z-50">
+    <motion.nav
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: "-100%" },
+      }}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{ duration: 0.35, ease: "easeInOut" }}
+      className=" bg-black/5 backdrop-blur-md border-b border-white/50 sticky top-0 w-full z-50"
+    >
       <Container>
         <div className="py-5 flex items-center justify-between">
           <Link href="/">
@@ -32,6 +56,6 @@ export const Navbar = () => {
           </Link>
         </div>
       </Container>
-    </nav>
+    </motion.nav>
   );
 };
