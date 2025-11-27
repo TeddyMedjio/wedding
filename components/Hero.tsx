@@ -7,7 +7,7 @@ export const Hero = () => {
     <section className="my-30">
       <Container>
         <h1 className="text-center text-9xl uppercase font-libre-caslon-text">
-          Noah & Sabrina
+          Noe & Sandrine
         </h1>
         <div className="flex items-center justify-center my-10">
           <p className=" text-2xl uppercase">Bafoussam</p>

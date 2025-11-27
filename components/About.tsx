@@ -4,7 +4,7 @@ import { Carousel } from "./Carousel";
 
 export const About = () => {
   return (
-    <section className="w-full mb-50">
+    <section className="w-full">
       <Container>
         <div className="grid place-items-center text-center">
           <div className="relative size-56">
@@ -34,7 +34,7 @@ export const About = () => {
           </div>
           <div className="space-y-3">
             <p className="text-xl">Avec amour,</p>
-            <p className="text-2xl font-libre-caslon-text">Noah & Sabrina</p>
+            <p className="text-2xl font-libre-caslon-text">Noe & Sandrine</p>
           </div>
         </div>
       </Container>
@@ -42,17 +42,17 @@ export const About = () => {
       <div className="bg-white py-40">
         <Container>
           <p className="font-libre-caslon-text text-4xl">
-            Une rencontre hasardeuse
+            Une rencontre hasardeuse.
           </p>
           <p className="font-libre-caslon-text text-4xl text-center my-20">
-            Nous sommes restés par choix
+            Nous sommes restés par choix.
           </p>
           <p className="font-libre-caslon-text text-4xl text-end">
-            Nous aimons pour la vie
+            Nous nous aimons pour la vie.
           </p>
           <div className="flex items-center gap-7 w-full mt-30">
             <p className="text-xl leading-7 shrink max-w-[400px] h-[500px]">
-              Noah et Sabrina se sont rencontrés lors d'un voyage improvisé à
+              Noe et Sandrine se sont rencontrés lors d'un voyage improvisé à
               Barcelone, et depuis, leur vie est une joyeuse aventure. Entre la
               découverte de nouvelles saveurs et de nouveaux sentiers de
               randonnée, et les flâneries délicieuses dans une minuscule

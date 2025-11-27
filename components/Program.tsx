@@ -1,0 +1,115 @@
+import Image from "next/image";
+import Container from "./Container";
+
+export const Program = () => {
+  return (
+    <section className="my-30">
+      <Container>
+        <div className="grid place-items-center relative">
+          <p className="text-4xl font-libre-caslon-text mb-20">
+            Programme de Mariage
+          </p>
+          {/* programme un */}
+          <div className="bg-white flex items-center h-[550px] w-full flex-wrap sticky top-1/4">
+            {/* textes */}
+            <div className=" max-w-[500px] p-10 h-full">
+              <p className="text-2xl font-libre-caslon-text mb-5">
+                Réunion Pré-Mariage
+              </p>
+              <p className="text-lg font-light">
+                Avant le début des festivités, nous serions ravis
+                d&rsquo;accueillir nos invités pour une soirée conviviale et
+                détendue en ville. Ce sera l&rsquo;occasion idéale de se
+                retrouver et de profiter de l&rsquo;ambiance barcelonaise.
+              </p>
+              <div className="mt-10">
+                <p className=" text-lg font-light flex items-center justify-between border-t border-gray-200 py-5">
+                  Date{" "}
+                  <span className="font-libre-caslon-text">
+                    Vendredi, 26 Septembre 2026
+                  </span>
+                </p>
+                <p className=" text-lg font-light flex items-center justify-between border-t border-gray-200 py-5">
+                  Heure{" "}
+                  <span className="font-libre-caslon-text">
+                    19h:00 - 22h:00
+                  </span>
+                </p>
+                <p className=" text-lg font-light flex items-center justify-between border-t border-gray-200 py-5">
+                  Localisation{" "}
+                  <span className="font-libre-caslon-text">
+                    Bar del Pla in El Born
+                  </span>
+                </p>
+                <p className=" text-lg font-light flex items-center justify-between border-t border-gray-200 py-5">
+                  Dress Code{" "}
+                  <span className="font-libre-caslon-text">
+                    Décontracté Chic
+                  </span>
+                </p>
+              </div>
+            </div>
+            {/* image */}
+            <div className="relative flex-1 h-full">
+              <Image
+                src="/restaurant.jpg"
+                fill={true}
+                alt="image restaurant"
+                className="absolute inset-0 m-auto object-cover"
+              />
+            </div>
+          </div>
+          {/* programme un */}
+          <div className="sticky top-1/4 mt-28 bg-white flex flex-row-reverse items-center h-[550px] w-full flex-wrap">
+            {/* textes */}
+            <div className=" max-w-[500px] p-10 h-full">
+              <p className="text-2xl font-libre-caslon-text mb-5">
+                Célébration de Mariage
+              </p>
+              <p className="text-lg font-light">
+                Notre célébration se déroule au Castell de Sant Marçal, un
+                château historique du XIe siècle avec des jardins, un lac et une
+                architecture qui allie grandeur et élégance.
+              </p>
+              <div className="mt-10">
+                <p className=" text-lg font-light flex items-center justify-between border-t border-gray-200 py-5">
+                  Date{" "}
+                  <span className="font-libre-caslon-text">
+                    Samedi, 27 Septembre 2026
+                  </span>
+                </p>
+                <p className=" text-lg font-light flex items-center justify-between border-t border-gray-200 py-5">
+                  Heure{" "}
+                  <span className="font-libre-caslon-text">
+                    17h:00 (Début des cérémonies)
+                  </span>
+                </p>
+                <p className=" text-lg font-light flex items-center justify-between border-t border-gray-200 py-5">
+                  Localisation{" "}
+                  <span className="font-libre-caslon-text">
+                    Castell de Sant Marçal
+                  </span>
+                </p>
+                <p className=" text-lg font-light flex items-center justify-between border-t border-gray-200 py-5">
+                  Dress Code{" "}
+                  <span className="font-libre-caslon-text">
+                    Tenue semi-formelle / de cocktail
+                  </span>
+                </p>
+              </div>
+            </div>
+            {/* image */}
+            <div className="relative flex-1 h-full">
+              <Image
+                src="/mairie.jpg"
+                fill={true}
+                alt="image restaurant"
+                className="absolute inset-0 m-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+};
