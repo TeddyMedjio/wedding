@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Container from "./Container";
 import { Carousel } from "./Carousel";
+import FadeInBlur from "./FadeInBlur";
 
 export const About = () => {
   return (
@@ -23,46 +24,62 @@ export const About = () => {
             />
           </div>
           <div className="mt-5 mb-20 space-y-2">
-            <p className="text-xl">
-              Nous sommes ravis de vous avoir à nos côtés pour cette journée si
-              spéciale,
-            </p>
-            <p className="text-xl">
-              et nous sommes honnorés que vous ayez fait le déplacement pour
-              être ici avec nous.
-            </p>
+            <FadeInBlur delay={0.6} duration={0.9}>
+              <p className="text-xl">
+                Nous sommes ravis de vous avoir à nos côtés pour cette journée
+                si spéciale,
+              </p>
+            </FadeInBlur>
+            <FadeInBlur delay={0.7} duration={0.9}>
+              <p className="text-xl">
+                et nous sommes honnorés que vous ayez fait le déplacement pour
+                être ici avec nous.
+              </p>
+            </FadeInBlur>
           </div>
           <div className="space-y-3">
-            <p className="text-xl">Avec amour,</p>
-            <p className="text-2xl font-libre-caslon-text">Noe & Sandrine</p>
+            <FadeInBlur delay={0.8} duration={0.9}>
+              <p className="text-xl">Avec amour,</p>
+            </FadeInBlur>
+            <FadeInBlur delay={0.9} duration={0.9}>
+              <p className="text-2xl font-libre-caslon-text">Noe & Sandrine</p>
+            </FadeInBlur>
           </div>
         </div>
       </Container>
       <Carousel />
       <div className="bg-white py-40">
         <Container>
-          <p className="font-libre-caslon-text text-4xl">
-            Une rencontre hasardeuse.
-          </p>
-          <p className="font-libre-caslon-text text-4xl text-center my-20">
-            Nous sommes restés par choix.
-          </p>
-          <p className="font-libre-caslon-text text-4xl text-end">
-            Nous nous aimons pour la vie.
-          </p>
-          <div className="flex items-center gap-7 w-full mt-30">
-            <p className="text-xl leading-7 shrink max-w-[400px] h-[500px]">
-              Noe et Sandrine se sont rencontrés lors d'un voyage improvisé à
-              Barcelone, et depuis, leur vie est une joyeuse aventure. Entre la
-              découverte de nouvelles saveurs et de nouveaux sentiers de
-              randonnée, et les flâneries délicieuses dans une minuscule
-              librairie du Quartier Gothique, nous avons toujours su que nous
-              étions faits l'un pour l'autre. <br /> <br /> Noah a fait sa
-              demande en mariage sous la douce lumière de la fontaine de
-              Montjuïc, lors d'un pique-nique surprise et d'une sérénade. <br />{" "}
-              <br /> Nous sommes ravis de célébrer ce nouveau chapitre avec vous
-              tous !
+          <FadeInBlur delay={0.4} duration={0.9}>
+            <p className="font-libre-caslon-text text-4xl">
+              Une rencontre hasardeuse.
             </p>
+          </FadeInBlur>
+          <FadeInBlur delay={0.5} duration={0.9}>
+            <p className="font-libre-caslon-text text-4xl text-center my-20">
+              Nous sommes restés par choix.
+            </p>
+          </FadeInBlur>
+          <FadeInBlur delay={0.6} duration={0.9}>
+            <p className="font-libre-caslon-text text-4xl text-end">
+              Nous nous aimons pour la vie.
+            </p>
+          </FadeInBlur>
+          <div className="flex items-center gap-7 w-full mt-30">
+            <FadeInBlur delay={0.7} duration={0.9}>
+              <p className="text-xl leading-7 shrink max-w-[400px] h-[500px]">
+                Noe et Sandrine se sont rencontrés lors d&rsquo;un voyage
+                improvisé à Barcelone, et depuis, leur vie est une joyeuse
+                aventure. Entre la découverte de nouvelles saveurs et de
+                nouveaux sentiers de randonnée, et les flâneries délicieuses
+                dans une minuscule librairie du Quartier Gothique, nous avons
+                toujours su que nous étions faits l&rsquo;un pour l&rsquo;autre.{" "}
+                <br /> <br /> Noe a fait sa demande en mariage sous la douce
+                lumière de la fontaine de Montjuïc, lors d&rsquo;un pique-nique
+                surprise et d&rsquo;une sérénade. <br /> <br /> Nous sommes
+                ravis de célébrer ce nouveau chapitre avec vous tous !
+              </p>
+            </FadeInBlur>
             <div className="flex-1 relative h-[500px] bg-red-100">
               <Image
                 src="/plage.jpg"

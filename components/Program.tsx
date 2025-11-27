@@ -1,16 +1,19 @@
 import Image from "next/image";
 import Container from "./Container";
+import FadeInBlur from "./FadeInBlur";
 
 export const Program = () => {
   return (
-    <section id="programme" className="my-30">
+    <section id="programme" className="mb-20">
       <Container>
         <div className="grid place-items-center relative">
           {/* programme un */}
-          <p className="text-4xl font-libre-caslon-text mb-10">
-            Programme de Mariage
-          </p>
-          <div className="bg-white flex items-center h-[550px] w-full flex-wrap sticky top-40">
+          <FadeInBlur delay={0.5} duration={0.9}>
+            <p className="text-4xl font-libre-caslon-text my-20">
+              Programme de Mariage
+            </p>
+          </FadeInBlur>
+          <div className="bg-white flex items-center h-[550px] w-full flex-wrap sticky top-60">
             {/* textes */}
             <div className=" max-w-[500px] p-10 h-full">
               <p className="text-2xl font-libre-caslon-text mb-5">
