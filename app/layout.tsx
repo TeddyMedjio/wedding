@@ -16,21 +16,32 @@ const libreCaslonText = Libre_Caslon_Text({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://noesandrine.com'),
+  metadataBase: new URL("https://wedding-ten-livid-77.vercel.app/"),
   title: {
     default: "Mariage Noe & Sandrine - 27 Septembre 2025 à Barcelone",
     template: "%s | Noe & Sandrine",
   },
-  description: "Rejoignez-nous pour célébrer le mariage de Noe et Sandrine le samedi 27 septembre 2025 à Barcelone. Découvrez le programme, réservez votre place et partagez ce moment unique avec nous.",
-  keywords: ["mariage", "Noe", "Sandrine", "Barcelone", "27 septembre", "2025", "célébration", "noces"],
+  description:
+    "Rejoignez-nous pour célébrer le mariage de Noe et Sandrine le samedi 27 septembre 2025 à Barcelone. Découvrez le programme, réservez votre place et partagez ce moment unique avec nous.",
+  keywords: [
+    "mariage",
+    "Noe",
+    "Sandrine",
+    "Barcelone",
+    "27 septembre",
+    "2025",
+    "célébration",
+    "noces",
+  ],
   authors: [{ name: "Noe & Sandrine" }],
   creator: "Noe & Sandrine",
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://noesandrine.com",
+    url: "https://wedding-ten-livid-77.vercel.app/",
     title: "Mariage Noe & Sandrine - 27 Septembre 2025",
-    description: "Rejoignez-nous pour célébrer notre mariage le samedi 27 septembre 2025 à Barcelone.",
+    description:
+      "Rejoignez-nous pour célébrer notre mariage le samedi 27 septembre 2025 à Barcelone.",
     siteName: "Mariage Noe & Sandrine",
     images: [
       {
@@ -44,7 +55,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Mariage Noe & Sandrine - 27 Septembre 2025",
-    description: "Rejoignez-nous pour célébrer notre mariage le samedi 27 septembre 2025 à Barcelone.",
+    description:
+      "Rejoignez-nous pour célébrer notre mariage le samedi 27 septembre 2025 à Barcelone.",
     images: ["/church.png"],
   },
   robots: {
