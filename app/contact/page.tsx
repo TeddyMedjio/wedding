@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import FadeInBlur from "@/components/FadeInBlur";
 import { div } from "framer-motion/client";
 import Image from "next/image";
 
