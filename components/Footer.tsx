@@ -32,17 +32,17 @@ export const Footer = () => {
           {/* navigation */}
           <ul className="md:w-6xl lg:w-fit text-center md:text-right space-y-2">
             <li>
-              <Link href="#about" className="text-lg uppercase">
+              <Link href="/#about" className="text-lg uppercase">
                 Nous
               </Link>
             </li>
             <li>
-              <Link href="#programme" className="text-lg uppercase">
+              <Link href="/#programme" className="text-lg uppercase">
                 programme
               </Link>
             </li>
             <li>
-              <Link href="#faq" className="text-lg uppercase">
+              <Link href="/#faq" className="text-lg uppercase">
                 faq
               </Link>
             </li>
