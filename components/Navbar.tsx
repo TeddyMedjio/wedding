@@ -30,7 +30,7 @@ export const Navbar = () => {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.35, ease: "easeInOut" }}
-        className=" bg-black/5 backdrop-blur-md border-b border-white/50 sticky top-0 w-full z-50"
+        className=" hidden md:block bg-black/5 backdrop-blur-md border-b border-white/50 sticky top-0 w-full z-50"
       >
         <Container>
           <div className="py-3 flex items-center justify-between">
@@ -50,6 +50,27 @@ export const Navbar = () => {
                 <Link href="/#faq">FAQ</Link>
               </li>
             </ul>
+
+            {/* Bouton RSVP desktop - caché sur mobile */}
+            <Link
+              href="/contact"
+              className="flex text-[17px] bg-black text-white p-2 items-center gap-2"
+            >
+              RSVP
+              <ArrowUpRight className="stroke-1" />
+            </Link>
+          </div>
+        </Container>
+      </motion.nav>
+
+      <nav className=" md:hidden bg-black/5 backdrop-blur-md border-b border-white/50 sticky top-0 w-full z-50">
+        <Container>
+          <div className="py-3 flex items-center justify-between">
+            <Link href="/">
+              <Image src="/logo.png" height={46} width={41} alt="logo" />
+            </Link>
+
+            {/* Menu mobile  - caché sur desktop */}
 
             {/* Bouton RSVP desktop - caché sur mobile */}
             <Link
@@ -74,7 +95,7 @@ export const Navbar = () => {
             </button>
           </div>
         </Container>
-      </motion.nav>
+      </nav>
 
       {/* Menu mobile */}
       <motion.div
