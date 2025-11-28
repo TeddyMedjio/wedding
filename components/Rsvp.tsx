@@ -22,7 +22,6 @@ export const Rsvp = () => {
           </FadeInBlur>
           <Link
             href="/contact"
-            target="_blank"
             className="text-[17px] border border-black hover:bg-black hover:text-white duration-300 ease-in-out p-2.5 flex items-center gap-2"
           >
             RSVP

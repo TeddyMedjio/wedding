@@ -30,8 +30,9 @@ export const Hero = () => {
         <Image
           src="/church.png"
           fill={true}
-          alt="image des maries"
+          alt="Église de mariage à Barcelone pour le mariage de Noe et Sandrine"
           className="absolute inset-0 m-auto object-cover "
+          priority
         />
       </div>
     </section>

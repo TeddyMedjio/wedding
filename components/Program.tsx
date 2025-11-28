@@ -57,7 +57,7 @@ export const Program = () => {
               <Image
                 src="/restaurant.jpg"
                 fill={true}
-                alt="image restaurant"
+                alt="Bar del Pla à Barcelone pour la réunion pré-mariage"
                 className="absolute inset-0 m-auto object-cover"
               />
             </div>
@@ -107,7 +107,7 @@ export const Program = () => {
               <Image
                 src="/mairie.jpg"
                 fill={true}
-                alt="image restaurant"
+                alt="Castell de Sant Marçal - Lieu de célébration du mariage"
                 className="absolute inset-0 m-auto object-cover"
               />
             </div>

@@ -13,13 +13,13 @@ export const About = () => {
               src="/logo.png"
               width={70}
               height={70}
-              alt="logo des maries"
+              alt="Logo du mariage de Noe et Sandrine"
               className="absolute inset-0 m-auto object-cover object-center"
             />
             <Image
               src="/palmiers.png"
               fill={true}
-              alt="logo des maries"
+              alt="Palmiers décoratifs - Mariage à Barcelone"
               className="absolute inset-0 m-auto object-cover object-center"
             />
           </div>
@@ -84,7 +84,7 @@ export const About = () => {
               <Image
                 src="/plage.jpg"
                 fill={true}
-                alt="image des maries a la plage"
+                alt="Noe et Sandrine sur la plage à Barcelone"
                 className="absolute inset-0 m-auto object-cover"
               />
             </div>
