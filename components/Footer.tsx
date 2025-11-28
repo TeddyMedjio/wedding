@@ -7,13 +7,16 @@ export const Footer = () => {
     <div className="bg-foreground text-white py-20">
       <Container>
         <div className="grid place-items-center md:place-items-start">
-          <Image
-            src="/logo_blanc.png"
-            height={70}
-            width={70}
-            alt="logo_blanc"
-            className="mb-6"
-          />
+          <Link href="/">
+            {" "}
+            <Image
+              src="/logo_blanc.png"
+              height={70}
+              width={70}
+              alt="logo_blanc"
+              className="mb-6"
+            />
+          </Link>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between space-y-10 md:space-y-0">
           {/* elements de gauche */}

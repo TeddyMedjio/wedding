@@ -37,13 +37,13 @@ export const Navbar = () => {
           </Link>
           <ul className="flex items-center gap-10 text-[17px] uppercase">
             <li>
-              <Link href="#about">Nous</Link>
+              <Link href="/#about">Nous</Link>
             </li>
             <li>
-              <Link href="#programme">programme</Link>
+              <Link href="/#programme">programme</Link>
             </li>
             <li>
-              <Link href="#faq">FAQ</Link>
+              <Link href="/#faq">FAQ</Link>
             </li>
           </ul>
 

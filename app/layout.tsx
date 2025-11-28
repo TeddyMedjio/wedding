@@ -29,9 +29,11 @@ export default function RootLayout({
       <body
         className={`${funnelSans.variable} ${libreCaslonText.variable} antialiased scroll-smooth`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <div className="relative">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
