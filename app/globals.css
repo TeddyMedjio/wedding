@@ -41,7 +41,7 @@ body {
   display: flex;
   gap: 18px;
   flex-direction: row;
-  animation: scroll-horizontal 25s linear infinite;
+  animation: scroll-horizontal 20s linear infinite;
 }
 
 .carousel-track:hover {

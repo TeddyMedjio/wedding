@@ -4,7 +4,7 @@ interface Props {
 
 function Container({ children }: Props) {
   return (
-    <div className="mx-auto container px-10 lg:px-0 max-w-[1200px]">
+    <div className="mx-auto container px-5 md:px-10 lg:px-0 max-w-[1200px]">
       {children}
     </div>
   );

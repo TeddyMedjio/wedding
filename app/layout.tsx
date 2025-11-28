@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Funnel_Sans, Libre_Caslon_Text } from "next/font/google";
 import "./globals.css";
+import { Footer } from "@/components/Footer";
+import { Navbar } from "@/components/Navbar";
 
 const funnelSans = Funnel_Sans({
   variable: "--font-funnel-sans",
@@ -27,7 +29,9 @@ export default function RootLayout({
       <body
         className={`${funnelSans.variable} ${libreCaslonText.variable} antialiased scroll-smooth`}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

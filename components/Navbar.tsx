@@ -31,7 +31,7 @@ export const Navbar = () => {
       className=" bg-black/5 backdrop-blur-md border-b border-white/50 sticky top-0 w-full z-50"
     >
       <Container>
-        <div className="py-5 flex items-center justify-between">
+        <div className="py-3 flex items-center justify-between">
           <Link href="/">
             <Image src="/logo.png" height={46} width={41} alt="logo" />
           </Link>
@@ -49,10 +49,10 @@ export const Navbar = () => {
 
           <Link
             href="/contact"
-            className="text-[17px] font-medium bg-black text-white p-3 flex items-center gap-2"
+            className="text-[17px] bg-black text-white p-2 flex items-center gap-2"
           >
             RSVP
-            <ArrowUpRight />
+            <ArrowUpRight className="stroke-1" />
           </Link>
         </div>
       </Container>
