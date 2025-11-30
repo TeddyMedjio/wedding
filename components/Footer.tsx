@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div className="bg-foreground text-white py-20">
+    <div className="bg-foreground text-white pt-20">
       <Container>
         <div className="grid place-items-center md:place-items-start">
           <Link href="/">
@@ -58,6 +58,16 @@ export const Footer = () => {
           </ul>
         </div>
       </Container>
+      <div className="bg-white/50 py-0.5 mt-20">
+        <p className="text-white text-center">
+          Develop by{" "}
+          <span className="font-bold">
+            <Link target="_blank" href="https://www.medjio.me">
+              www.medjio.me
+            </Link>
+          </span>
+        </p>
+      </div>
     </div>
   );
 };
